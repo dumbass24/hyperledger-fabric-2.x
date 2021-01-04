@@ -28,7 +28,7 @@ class FabCar extends Contract {
 
     // readdata
 
-    async(ctx, key){
+    async readData(ctx, key){
         var res = await ctx.stub.getState(key)
         return res.toString()
     }
